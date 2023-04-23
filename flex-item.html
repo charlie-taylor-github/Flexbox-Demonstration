@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Items</title>
+
+    <link rel="stylesheet" href="styles/universal-styles.css">
+    <link rel="stylesheet" href="styles/item-styles.css">
+</head>
+
+<body>
+    <h1>Here are demonstrations for the different flex-item properties</h1>
+    <a href="./index.html">
+        <h2>flex container properties</h2>
+    </a>
+
+    <div class="example" id="example-1">
+        <h1>Box 2 | order: -1</h1>
+        <p>default order is 0</p>
+        <div class="container">
+            <div class="box">
+                <h1>Box 1</h1>
+            </div>
+            <div class="box">
+                <h1>Box 2</h1>
+            </div>
+            <div class="box">
+                <h1>Box 3</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="example" id="example-2">
+        <h1>All Boxes | flex-grow: 1</h1>
+        <p>ratio of flex-items flex-grow properties is proportion to proportion of container they take up when the page
+            grows</p>
+        <p>default flex-grow is 0</p>
+        <div class="container">
+            <div class="box">
+                <h1>Box 1</h1>
+            </div>
+            <div class="box">
+                <h1>Box 2</h1>
+            </div>
+            <div class="box">
+                <h1>Box 3</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="example" id="example-3">
+        <h1>Box 1, 2 | flex-grow: 1</h1>
+        <h1>Box 3 | flex-grow: 5</h1>
+        <div class="container">
+            <div class="box">
+                <h1>Box 1</h1>
+            </div>
+            <div class="box">
+                <h1>Box 2</h1>
+            </div>
+            <div class="box">
+                <h1>Box 3</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="example" id="example-4">
+        <h1>Box 1, 2 | flex-shrink: 1</h1>
+        <h1>Box 3 | flex-shrink: 5</h1>
+        <div class="container">
+            <div class="box">
+                <h1>Box 1</h1>
+            </div>
+            <div class="box">
+                <h1>Box 2</h1>
+            </div>
+            <div class="box">
+                <h1>Box 3</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="example" id="example-5">
+        <h1>All Boxes | flex-basis: 30vw</h1>
+        <p>sets the default width of a flex-item (before any growing / shrinking required</p>
+        <div class="container">
+            <div class="box">
+                <h1>Box 1</h1>
+            </div>
+            <div class="box">
+                <h1>Box 2</h1>
+            </div>
+            <div class="box">
+                <h1>Box 3</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="example" id="example-6">
+        <h1>All Boxes | flex-basis: 100vw</h1>
+        <p>overflows but they all have the same flex-shrink so they decrease proportionally/equally</p>
+        <div class="container">
+            <div class="box">
+                <h1>Box 1</h1>
+            </div>
+            <div class="box">
+                <h1>Box 2</h1>
+            </div>
+            <div class="box">
+                <h1>Box 3</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="example" id="example-7">
+        <h1>Box 1, 2 | align-self: flex-start</h1>
+        <h1>Box 3 | align-self: center</h1>
+        <p>overrides the align-items property of container</p>
+        <div class="container">
+            <div class="box">
+                <h1>Box 1</h1>
+            </div>
+            <div class="box">
+                <h1>Box 2</h1>
+            </div>
+            <div class="box">
+                <h1>Box 3</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

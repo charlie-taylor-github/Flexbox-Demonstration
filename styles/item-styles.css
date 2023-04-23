@@ -1,0 +1,57 @@
+/* Example 1 */
+#example-1 .box:nth-of-type(2) {
+    order: -1;
+}
+
+
+/* Example 2 */
+#example-2 .box {
+    flex-grow: 1;
+}
+
+
+/* Example 3 */
+#example-3 .box {
+    flex-grow: 1;
+}
+
+#example-3 .box:nth-of-type(3) {
+    flex-grow: 5;
+}
+
+
+/* Example 4 */
+#example-4 .box {
+    width: 40vw;
+    flex-shrink: 1;
+}
+
+#example-4 .box:nth-of-type(3) {
+    flex-shrink: 5;
+}
+
+
+/* Example 5 */
+#example-5 .box {
+    flex-basis: 30vw;
+}
+
+
+/* Example 6 */
+#example-6 .box {
+    flex-basis: 100vw;
+}
+
+
+/* Example 7 */
+#example-7 .container {
+    height: 15vw;
+}
+
+#example-7 .box {
+    align-self: flex-start;
+}
+
+#example-7 .box:nth-of-type(3) {
+    align-self: center;
+}
